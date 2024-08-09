@@ -1,0 +1,40 @@
+li {
+    margin: 8px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 3.7px solid #53736A;
+    border-radius: 5px;
+    background-color: rgba(211, 211, 211, 0.31);
+}
+
+
+
+
+.botao1 {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: 700;
+    background-color: rgb(207, 207, 42);
+}
+
+.botao1:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 49);
+}
+
+.botao2 {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(140, 5, 5);
+}
+
+.botao2:hover {
+    cursor: pointer;
+    background-color: rgb(198, 14, 14);;
+}

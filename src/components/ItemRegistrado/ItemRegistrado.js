@@ -1,19 +1,30 @@
 import React from 'react';
+import './ItemRegistrado.css'
 
 function ItemRegistrado({ registro, onEdit, onDelete }) {
   return (
-    <li>
-      <strong>Nome:</strong> {registro.nome}, 
-      <strong> Animal:</strong> {registro.animal}, 
-      <strong> Raça:</strong> {registro.raca}, 
-      <strong> Telefone:</strong> {registro.telefone}
-      <button onClick={onEdit} style={{ marginLeft: '10px' }}>
+    <div className="container">
+    <li >
+      <div className="Registro">
+        <strong> Nome:</strong> {registro.nome}
+      </div>
+      <div className="Registro">
+        <strong> Animal:</strong> {registro.animal}
+      </div>
+      <div className="Registro"> 
+        <strong> Raça:</strong> {registro.raca}
+      </div>
+      <div className="Registro"> 
+        <strong> Telefone:</strong> {registro.telefone}
+      </div>
+      <button className='botao1' onClick={onEdit} style={{ marginLeft: '10px' }}>
         Editar
       </button>
-      <button onClick={onDelete} style={{ marginLeft: '10px' }}>
+      <button className='botao2' onClick={onDelete} style={{ marginLeft: '10px' }}>
         Deletar
       </button>
     </li>
+    </div>
   );
 }
 

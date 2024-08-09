@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Formulario from './components/Formulario/Formulario';
 import ListaDeRegistros from './components/ListaDeRegistros/ListaDeRegistros';
+import Banner from './components/Banner/Banner';
+import './App.css'
 
 function App() {
   const [registros, setRegistros] = useState([]);
@@ -66,8 +68,8 @@ function App() {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h1>Cadastro de Nomes</h1>
+    <div className="App">
+      <Banner />
       <Formulario
         form={form}
         onChange={handleChange}

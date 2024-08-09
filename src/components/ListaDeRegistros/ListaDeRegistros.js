@@ -1,9 +1,10 @@
 import React from 'react';
 import ItemRegistrado from '../ItemRegistrado/ItemRegistrado';
+import './ListaDeRegistros.css'
 
 function ListaDeRegistro({ registros, onEdit, onDelete }) {
   return (
-    <ul>
+    <ul type="none">
       {registros.map((registro, index) => (
         <ItemRegistrado
           key={index}
