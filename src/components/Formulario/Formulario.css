@@ -4,6 +4,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 10px;
     margin: 10px;
 }
@@ -12,6 +13,7 @@
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
+    width: 20%vw;
     border-color: black;
     box-shadow: none;
 }
@@ -20,6 +22,7 @@
     margin: 5px;
     padding: 10px;
     border-radius: 5px;
+    width: 20%vw;
     border: 2px solid black;
     background-color: #6A8C69;
     font-weight: 700;
@@ -37,44 +40,3 @@ h1 {
     color: black;
 }
 
-@media screen and (min-width: 455px){
-    .Formulario {
-        display: flex;
-        flex-direction: column;
-        justify-content:center;
-        align-items: center;
-        padding: 10px;
-        margin: 10px;
-    }
-
-    .Input {
-        margin: 5px;
-        padding: 10px;
-        max-width: 700px;
-        border-radius: 5px;
-        border-color: black;
-        box-shadow: none;
-    }
-    
-    .Botao {
-        margin: 5px;
-        padding: 10px;
-        border-radius: 5px;
-        max-width: 455px;
-        border: 2px solid black;
-        background-color: #6A8C69;
-        font-weight: 700;
-    }
-    
-    .Botao:hover {
-        background-color: #53736A;
-        cursor: pointer;
-    }
-    
-    h1 {
-        font-family: "Just Another Hand", cursive;
-        font-size: 50px;
-        font-weight: 200;
-        color: black;
-    }
-}
