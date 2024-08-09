@@ -3,6 +3,7 @@ import Formulario from './components/Formulario/Formulario';
 import ListaDeRegistros from './components/ListaDeRegistros/ListaDeRegistros';
 import Banner from './components/Banner/Banner';
 import './App.css'
+import Rodape from './components/Rodape/Rodape';
 
 function App() {
   const [registros, setRegistros] = useState([]);
@@ -81,6 +82,7 @@ function App() {
         onEdit={editarRegistro}
         onDelete={deletarRegistro}
       />
+      <Rodape />
     </div>
   );
 }
