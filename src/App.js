@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Form from './components/Form/Form';
+import List from './components/List/List';
 
 function App() {
+  const [nomes, setNomes] = useState([]);
+
+  const adicionarNome = (nomeDigitado) => {
+    setNomes([...nomes, nomeDigitado]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: '20px' }}>
+      <h1>Cadastro de Nomes</h1>
+      
+      {/* Componente Form para adicionar novos nomes */}
+      <Form nomeDigitado={adicionarNome} />
+      
+      {/* Componente List para exibir os nomes cadastrados */}
+      <List nomes={nomes} />
     </div>
   );
 }
 
 export default App;
+
